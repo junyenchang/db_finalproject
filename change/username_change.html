@@ -1,0 +1,59 @@
+<!--改成像報名那邊的形式或自由發揮，詳情參照badminton.html-->
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+    <link rel="stylesheet" type="text/css" href="util.css">
+     </style> 
+    <title>修改使用者姓名</title>
+        <script>
+            function validateForm() {
+                var x = document.forms["alter_username_Form"]["username1"].value;
+                var y = document.forms["alter_username_Form"]["username2"].value;
+                if (x == y) {
+                    alert("新姓名與原姓名相同");
+                    return false;
+                }
+                if (x == 0||y==0) {
+                    alert("請填寫完整");
+                    return false;
+                }
+            }
+        </script>
+        
+        </head>
+    <body>
+        <div class="limiter">
+            <div class="container-login100">
+              <div class="wrap-login100">
+                <div class="login100-form-title" style="background-image: url(images/bg-04.jpg);">
+                  <span class="login100-form-title-1">
+                    修改使用者姓名頁面
+                </span>
+            </div>
+            <div class="loginnn"> 
+                    <form name="alter_username_Form" method="post" action="username_change.php" onsubmit="return validateForm()">
+                    舊使用者姓名：
+                    <input type="text" name="old_username" id="old_username" placeholder="舊使用者姓名 *" class="form-input" required=""><br/><br/>
+                    新使用者姓名：
+                    <input type="text" name="new_username" id="new_username" placeholder="新使用者姓名 *" class="form-input" required=""><br/><br/>
+                
+                
+                    <input type="submit" value="送出" name="submit">
+                    <input type="reset" value="重設" name="submit">
+                    <br><br>
+                    <a href="/final_project/afterLog/index_afterLog.html">返回登入後的個人簡介</a>
+                    </div>
+                </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </body>
+    </html>
+
+
+
+
+

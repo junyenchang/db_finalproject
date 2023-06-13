@@ -1,0 +1,50 @@
+<!--改成像報名那邊的形式或自由發揮，詳情參照badminton.html-->
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+    <link rel="stylesheet" type="text/css" href="util.css">
+
+    <title>取消報名</title>
+        <script>
+            function validateForm() {
+                var a = document.forms["delete_username_Form"]["user_id"].value;
+                var b = document.forms["delete_username_Form"]["username"].value;
+                var c = document.forms["delete_username_Form"]["password"].value;
+                var d = document.forms["delete_username_Form"]["teamname"].value;
+                if (a == 0||b==0||c == 0||d == 0) {
+                    alert("請填寫完整");
+                    return false;
+                }
+            }
+        </script>
+        
+        </head>
+    <body>
+        <div class="limiter">
+            <div class="container-login100">
+              <div class="wrap-login100">
+                <div class="login100-form-title" style="background-image: url(images/bg-08.jpg);">
+                  <span class="login100-form-title-1">
+                    取消報名
+                  </span>
+                </div>
+                <br>
+                <div class="registt"> 
+                    <form method="post" action="football_delete.php" class="form-input" required="">
+                        隊伍名稱：
+                        <input type="text" name="teamname" id="teamname" placeholder="隊伍名稱 *"><br/><br/>
+                        <input type="submit" value="送出" name="submit">
+                        <input type="reset" value="重設" name="submit">
+                        <br><br>
+                        <a href="/final_project/afterLog/index_afterlog.html">返回登陸後的主頁</a>
+                        </form>
+              </div>
+            </div>
+            </div>
+              </div>
+            </div>
+          </div>
+    </body>
+    </html>
+

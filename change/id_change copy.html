@@ -1,0 +1,57 @@
+<!--改成像報名那邊的形式或自由發揮，詳情參照badminton.html-->
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+    <link rel="stylesheet" type="text/css" href="util.css">
+
+    <title>修改身分證字號</title>
+        <script>
+            function validateForm() {
+                var x = document.forms["alter_id_Form"]["id1"].value;
+                var y = document.forms["alter_id_Form"]["id2"].value;
+                if (x == y) {
+                    alert("請勿使用相同的身分證字號");
+                    return false;
+                }
+                if (x == 0||y==0) {
+                    alert("請填寫完整");
+                    return false;
+                }
+            }
+        </script>
+        
+        </head>
+        <body>
+	
+            <div class="limiter">
+              <div class="container-login100">
+                <div class="wrap-login100">
+                  <div class="login100-form-title" style="background-image: url(images/bg-02.jpg);">
+                    <span class="login100-form-title-1">
+                        修改身分證頁面
+                    </span>
+                  </div>
+                  <br>
+                  <div class="iinput">
+                  <form name="alter_id_Form" method="post" action="id_change.php" onsubmit="return validateForm()">
+                  舊身分證字號：
+                  <input type="text" name="old_id" id="old_id" placeholder="舊身分證字號 *" class="form-input" required=""><br/><br/>
+                  新身分證字號：
+                  <input type="text" name="new_id" id="new_id" placeholder="新身分證字號 *" class="form-input" required=""><br/><br/>
+                  <input type="submit" value="送出" name="submit">
+                  <input type="reset" value="重設" name="submit">
+                  <br><br>
+                  <a href="index_afterLog.html">返回登入後的頁面</a>
+                  </form>
+                     </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+          </body>
+    </html>
+
+
