@@ -101,8 +101,10 @@
 消已經報名的比賽。以下會附上我們的截圖：
 
 單人查詢結果
+![image](https://github.com/s97302/db_finalproject/assets/136255897/fb774e7f-0513-49d2-92a3-4298658b437f)
 
 團體查詢結果
+![image](https://github.com/s97302/db_finalproject/assets/136255897/afb79740-48d5-4acb-bdbf-47c6c8c0bef0)
 
 接著我要介紹我們的報名功能，報名是因為已經紀錄了登入時的用
 
@@ -123,6 +125,9 @@
 (隊伍)點擊報名的按鈕時，會跳出警告說該比賽名額已滿。以下用截
 
 圖輔助說明
+![image](https://github.com/s97302/db_finalproject/assets/136255897/49e9edb1-da44-4f70-970c-56035a382da6)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/a6bac425-e62c-41ab-bce5-7b76c3e14cf1)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/b371ad9f-42f6-4d0b-a86b-549d25468097)
 
 單人報名我們用 demo 時的資料做例子來說明，先登入會員後找到
 
@@ -131,8 +136,11 @@
 到你的報名資料，而 NUM=7 則是報名時就亂數給你的序號，這樣就
 
 更公平的產生賽程。下者為團體報名：
-
-
+![image](https://github.com/s97302/db_finalproject/assets/136255897/0dad79fb-b791-4a8a-a95a-f42bc74f50ad)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/ad537571-7141-4c9b-a6bb-780ee02ced85)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/4c7680bd-8ffd-4f59-8fa3-dde2d03a818f)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/0f67a4dd-435b-4b25-9fbe-7b1d9437ac86)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/449dafb2-4ff2-4228-b7b5-d4ea3f2e37f0)
 
 <a name="br5"></a> 
 
@@ -171,10 +179,15 @@ Menu 的 Cancel 進去，每一種比賽都有專屬自己的頁面，輸入身�
 功能只能由隊長登入帳號進行取消功能，就算是隊員有註冊帳號也
 
 不能取消，我們用截圖來演示一次：
+![image](https://github.com/s97302/db_finalproject/assets/136255897/8aabcf3b-034d-4d17-8bb1-798e239dd8f8)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/b5549702-2778-4dfa-8404-4eafad627114)
 
 上兩圖為我們單人與團體的取消報名頁面、下面三個則是取消過後
 
 的資料庫，也就是上面的報名紀錄被 delete 掉的資料庫
+![image](https://github.com/s97302/db_finalproject/assets/136255897/aab19b9b-99fd-4843-bb6b-e286c548e656)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/4c91a171-d796-4b9f-99e6-4084f84ef0b6)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/5b90b581-4cd3-4725-a257-572beabbc574)
 
 最後是我們的賽程功能，在一個比賽報名滿 8 個人(隊伍)後，才可以
 
@@ -189,6 +202,8 @@ Menu 的 Cancel 進去，每一種比賽都有專屬自己的頁面，輸入身�
 免黑箱作業。所以是沒有辦法在報名名額尚未額滿的情況下查看自
 
 己的對手的。
+![image](https://github.com/s97302/db_finalproject/assets/136255897/660b0455-8df3-4bd6-815c-b366ba19d801)
+![image](https://github.com/s97302/db_finalproject/assets/136255897/d00a1e1e-ea84-4fab-878d-d4516e8dc0e1)
 
 補充：
 
